@@ -56,6 +56,14 @@ your ``conf.py`` file's ``html_theme`` setting:
 .. _Supported dependencies: https://sphinx-rtd-theme.readthedocs.io/en/stable/development.html#supported-dependencies
 .. _Example documentation:  https://sphinx-rtd-theme.readthedocs.io/en/stable/
 
+Build
+=====
+
+Under docs folder
+.. code:: console
+
+    $ docker run --rm -v /Users/noah/Work/github.com/sphinx-doc/sphinx_rtd_theme/docs:/docs sphinx_rtd_theme:7.3.7-dep sphinx-build -M html . _build
+
 Configuration
 =============
 
